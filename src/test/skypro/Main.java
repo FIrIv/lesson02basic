@@ -10,7 +10,13 @@ public class Main {
         float timeBetweenShipment1 = 3.5f;
         double timeBetweenShipment2 = 2.3333333333;
 
+        float weightBoxer1 = 78.2f;
+        float weightBoxer2 = 82.7f;
+        float weightBoxers = weightBoxer1 + weightBoxer2;
+        System.out.println ("Общий вес борцов " + weightBoxers);
 
+        float weightBetweenBoxers = weightBoxer2 - weightBoxer1;
+        System.out.println ("Разница в весе между боксерами " + weightBetweenBoxers);
 
         
     }
