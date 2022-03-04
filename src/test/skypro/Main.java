@@ -57,9 +57,9 @@ public class Main {
         float MashaSalaryUp = MashaSalaryAfter - MashaSalary;
         float DenisSalaryUp = DenisSalaryAfter - DenisSalary;
         float KristinaSalaryUp = KristinaSalary * SalaryUpKoef;
-        System.out.println("Маша теперь получает " + MashaSalaryAfter + " рублей. Годовой доход вырос на " + MashaSalaryUp + " рублей.");
-        System.out.println("Денис теперь получает " + DenisSalaryAfter + " рублей. Годовой доход вырос на " + DenisSalaryUp + " рублей.");
-        System.out.println("Кристина теперь получает " + KristinaSalaryAfter + " рублей. Годовой доход вырос на " + KristinaSalaryUp + " рублей.");
+        System.out.println("Маша теперь получает " + MashaSalaryAfter + " рублей. Годовой доход вырос на " + MashaSalaryUp*12 + " рублей.");
+        System.out.println("Денис теперь получает " + DenisSalaryAfter + " рублей. Годовой доход вырос на " + DenisSalaryUp*12 + " рублей.");
+        System.out.println("Кристина теперь получает " + KristinaSalaryAfter + " рублей. Годовой доход вырос на " + KristinaSalaryUp*12 + " рублей.");
         System.out.println();
     }
 }
