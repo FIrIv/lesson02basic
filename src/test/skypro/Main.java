@@ -15,10 +15,9 @@ public class Main {
         float weightBoxer1 = 78.2f;
         float weightBoxer2 = 82.7f;
         float weightBoxers = weightBoxer1 + weightBoxer2;
-        System.out.println ("Общий вес борцов " + weightBoxers);
-
+        System.out.println ("Общий вес борцов " + weightBoxers + "кг");
         float weightBetweenBoxers = weightBoxer2 - weightBoxer1;
-        System.out.println ("Разница в весе между боксерами " + weightBetweenBoxers);
+        System.out.println ("Разница в весе между боксерами " + weightBetweenBoxers + "кг");
         System.out.println();
 
         short bananaGramm = 80;
@@ -29,27 +28,29 @@ public class Main {
         int milk = 200 / 100 * milkGramm;
         int iceCream = 2 * iceCreamGramm;
         int aggs = 4 * aggGramm;
+        int gToKg = 1000;
         int breakfastGramm = bananas + milk + iceCream + aggs;
-        float breakfastKg = breakfastGramm / 1000f;
-        System.out.println("Завтрак спортсмена, г.: " + breakfastGramm);
-        System.out.println("Завтрак спортсмена, кг: " + breakfastKg);
+        float breakfastKg = breakfastGramm / (float)gToKg;
+        System.out.println("Завтрак спортсмена: " + breakfastGramm + "г");
+        System.out.println("Завтрак спортсмена: " + breakfastKg + "кг");
         System.out.println();
 
         short weightDownMin = 250;
         short weightDownMax = 500;
         short weightDownKg = 7;
-        int dayForWeightDownMin = weightDownKg * 1000 / weightDownMin;
-        int dayForWeightDownMax = weightDownKg * 1000 / weightDownMax;
-        float DayForWeightDownMiddle = weightDownKg * 1000f / ((float)(weightDownMin + weightDownMax)/2);
+        int dayForWeightDownMin = weightDownKg * gToKg / weightDownMin;
+        int dayForWeightDownMax = weightDownKg * gToKg / weightDownMax;
+        float weightDownMiddle = (weightDownMin + weightDownMax)/2f;
+        float DayForWeightDownMiddle = weightDownKg * gToKg / weightDownMiddle;
         System.out.println("Если худеть по 250г в день, спортсмену понадобится " + dayForWeightDownMin + " дней для похудения. ");
         System.out.println("Если худеть по 500г в день, спортсмену понадобится " + dayForWeightDownMax + " дней для похудения. ");
-        System.out.println(DayForWeightDownMiddle + " дней для похудения понадобится спортсмену в среднем. ");
+        System.out.println(DayForWeightDownMiddle + " дней для похудения понадобится спортсмену в среднем (ср.вес похудения " + weightDownMiddle + "г/день). ");
         System.out.println();
 
         int MashaSalary = 67_760;
         int DenisSalary = 83_690;
         int KristinaSalary = 76_230;
-        float SalaryUpKoef = 0.01f;
+        float SalaryUpKoef = 0.1f;
         float MashaSalaryAfter = MashaSalary * (1+SalaryUpKoef);
         float DenisSalaryAfter = DenisSalary * (1+SalaryUpKoef);
         float KristinaSalaryAfter = KristinaSalary * (1+SalaryUpKoef);
